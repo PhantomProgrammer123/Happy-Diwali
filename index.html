@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY DIWALI</title>
+    <link rel="icon" href="diya-removebg-preview.png" style="border-radius: 5px;">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body background="colorful-fireworks-background-free-vector.jpg" class="text-white">
+    <section class="text-gray-400 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img src="hd-removebg-preview.png" class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="inline-flex text-white bg-gray-700 border-0 py-1 px-4 focus:outline-none rounded text-lg title-font sm:text-4xl text-3xl mb-4 font-medium text-white">!! HAPPY DIWALI !!</h1><br>
+            <p class="inline-flex text-white bg-gray-700 border-0 py-1 px-2 focus:outline-none rounded text-lg sm:text-1xl text-1xl mb-4 text-white leading-relaxed mb-8">From Anmol</p>
+            <div class="flex justify-center">
+              <button onclick="playaudio()" style="background-color: #00A36C;" class="inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg">Play Sound</button>
+              <button onclick="stopaudio()" style="background-color: #00A36C;" class="ml-4 inline-flex text-white border-0 py-2 px-6 focus:outline-none hover: rounded text-lg">Stop Sound</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <audio controls autoplay loop hidden id="Diwali">
+        <source src="Jethalal Happy Diwali.mp3">
+      </audio>
+      <script>
+		var a = document.getElementById("Diwali");
+		function playaudio() {
+			a.play();
+		}
+
+		function stopaudio() {
+			a.pause();
+			a.currentTime = 0;
+		}
+	</script>
+
+</body>
+</html>
