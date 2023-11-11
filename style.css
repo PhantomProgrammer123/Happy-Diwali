@@ -5,9 +5,9 @@
 
 @keyframes slideIn{
     from{
-        margin-top: 100%;
+        margin-top: 0%;
     }
     to{
-        margin-bottom: 0%;
+        margin-bottom: 100%;
     }
 }
